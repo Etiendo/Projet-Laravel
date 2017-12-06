@@ -26,3 +26,7 @@ Route::get('/hello', function () {
         return "L'utilisateur n'existe pas";
     }
 }); */
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
